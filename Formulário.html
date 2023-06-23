@@ -10,7 +10,9 @@
     <header>
         <h1 id="titulo">Python Help</h1>
         <div class="cabecario">
-            <h2>Cadastro</h2>
+            <div class="cabecario_top">
+                <p>Cadastro</p>
+            </div>
         </div>
     </header>
 
@@ -80,11 +82,30 @@
                 <h2>Preencha este Formulário</h2>
             </header>
             <form action="Formulário.html">
-                <h3>Nome Completo</h3>
-                <input id="nome" class="texto" type="text" placeholder="Ex: Gustavo G. Contiero" minlength="3">
-                <h3>Email</h3>
-                <input id="email" class="texto" type="email" placeholder="Ex: PythonHelp@gmail.com">
-                <h3>Dia da Semana preferido</h3>
+                <label for="nome">Nome Completo</label>
+                <input name="nome" id="nome" class="texto" type="text" placeholder="Ex: Gustavo G. Contiero" minlength="3" required>
+                <label for="email">Email</label>
+                <input name="email" id="email" class="texto" type="email" placeholder="Ex: PythonHelp@gmail.com" required>
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" max="2023-06-26" required>
+
+                <label for="linguagem">Escolha suas linguagens preferidas</label>
+                <div class="checkbox">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="python" name="linguagem" value="python" checked>
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="java" name="linguagem" value="java">
+                    <label for="c">C</label>
+                    <input type="checkbox" id="c" name="linguagem" value="c">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" id="php" name="linguagem" value="php">
+                    <label for="sql">SQL</label>
+                    <input type="checkbox" id="sql" name="linguagem" value="sql">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" id="javascript" name="linguagem" value="javascript">
+                </div>
+
+                <label for="dia_semana">Dia da semana preferido</label>
                 <select name="dia_semana" id="dia">
                     <option value="1">
                         Domingo
@@ -101,13 +122,27 @@
                     <option value="5">
                         Quinta
                     </option>
-                    <option value="6">
+                    <option value="6" selected>
                         Sexta
                     </option>
                     <option value="7">
                         Sábado
                     </option>
                 </select>
+                <label for="sexo">Sexo</label>
+                <div>
+                    <input class="radio" type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                    <input class="radio"  type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div>
+                    <input class="radio"  type="radio" id="nao_responder" name="sexo" value="nao_responder" checked>
+                    <label for="nao_responder">Não quero responder</label>
+                </div>
+                <input id="submit" type="submit">
             </form>
         </section>
     </main>
