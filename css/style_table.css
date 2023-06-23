@@ -1,0 +1,13 @@
+th{
+    border: solid 2px; 
+}
+td{
+    border: solid 1px;
+}
+table{
+    border: solid 3px;
+}
+caption{
+    font-size: 20px;
+    margin: 10px 0px;
+}

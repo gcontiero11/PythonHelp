@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@500&family=Raleway:wght@600&display=swap');
+:root {
+    --content-font: "Raleway", sans-serif;
+    --structure-font: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #9DB2BF;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 130px 700px 300px auto 60px;
+    gap: 10px;
+}
+
+body>header {
+    background: #27374D;
+    font-family: var(--structure-font);
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1;
+    grid-column: 1 / 4;
+    border-radius: 10px;
+}
+
+body .cabecario {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: rgb(255, 242, 54);
+    grid-row: 1;
+    grid-column: 2;
+    padding-right: 20px;
+}
+
+header h1 {
+    color: white;
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.cabecario img{
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    transition: 200ms;
+}
+
+.cabecario img:hover{
+    border-radius: 50%;
+    background-color: rgb(255, 242, 54);
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+}
+
+main {
+    padding: 50px;
+    border-radius: 10px;
+    background: #DDE6ED;
+    grid-row: 2 / 5;
+    grid-column: 2 / 3;
+    font-family: var(--content-font);
+}
+
+body .geral{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    background: linear-gradient(90deg, rgba(255, 232, 115, 1) 0%, rgba(255, 217, 74, 1) 48%, rgba(255, 216, 75, 1) 100%);
+    border-radius: 10px;
+    grid-row: 2 / 5;
+    grid-column: 3;
+}
+
+body .utilizacao{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    background: linear-gradient(90deg, rgba(255, 232, 115, 1) 0%, rgba(255, 217, 74, 1) 48%, rgba(255, 216, 75, 1) 100%);
+    border-radius: 10px;
+    grid-row: 2 / 5;
+    grid-column: 3;
+}
+
+aside .aside_container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  grid-row: 1;
+  grid-column: 1;
+}
+aside .top{
+  grid-row: 1;
+}
+aside .mid{
+  grid-row: 2;
+}
+aside .bottom{
+  grid-row: 3;
+}
+
+
+aside img{
+    grid-row: 1;
+    grid-column: 3;
+    width: 100px;
+    height: 100px;
+}
+
+span{
+    color: blue;
+}
+
+span :hover{
+    text-decoration: underline; 
+}
+
+nav {
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background: #27374D;
+    border-radius: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+nav a {
+    transition: 200ms;
+    color: inherit;
+    text-decoration: none;
+}
+
+main a{
+    transition: 200ms;
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgba(255, 216, 75, 1);
+}
+
+section>.cabecario {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.cabecario {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+}
+
+.introducao {
+    font-size: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    background: #27374D;
+    text-align: center;
+    grid-row: 5;
+    grid-column: 1 / 4;
+    font-family: var(--structure-font);
+    color: white;
+}
+
+.content {
+    padding: 50px;
+}
+
+.aside {
+    font-family: var(--structure-font);
+    text-align: center;
+}
+
+.infos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: var(--structure-font);
+    color: white;
+    grid-row: 3;
+    grid-column: 1;
+    background: #27374D;
+    border-radius: 10px;
+}
+
+.logos {
+    width: 35px;
+    height: 35px;
+}
+
+.nav_container {
+    grid-row: 2;
+}
+
+.foot_img {
+    height: fit-content;
+    width: 150px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+h3 .foot {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+input{
+    width: 20%;
+}
+
+.texto{
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+#nome:invalid{
+    border-color: red;
+}
+
+#nome:valid {
+    border-color: green;
+}
