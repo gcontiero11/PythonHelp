@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="css/style_index.css">
 </head>
+
 <body>
     <header>
-        <h1 id="titulo">Python Help</h1>
+        <h1>Python Help</h1>
         <div class="cabecario">
             <div class="cabecario_top">
                 <p>Cadastro</p>
@@ -17,43 +19,47 @@
     </header>
 
     <nav>
-        <h2>Navegação</h2>
-        <ul>
-          <li><a href="Index.html" title="Clique para acessar o menu">Home</a></li>
-          <li><a href="GuidoVanRossum.html" title="Clique para acessar a página do criador do Python">Criador</a></li>
-          <li><a href="História.html"
-            title="Clique para acessar a página da história do Python">História</a></li>
-          <li><a href="Comandos.html" title="Clique para acessar a página com uma tabela de comandos do Python">Comandos</a>
-          </li>
-          <li><a href="Utilização.html"
-              title="Clique para acessar a página com as áreas de utilização do Python">Utilização</a></li>
-        </ul>
+        <div class="nav_container">
+            <h2 class="nav_titulo">Navegação</h2>
+            <ul>
+                <li><a href="Index.html" title="Clique para acessar o menu">Menu</a></li>
+                <li><a href="Criador.html" title="Clique para acessar a página do criador do Python">Criador</a>
+                </li>
+                <li><a href="História.html" title="Clique para acessar a página da história do Python">História</a></li>
+                <li><a href="Comandos.html"
+                        title="Clique para acessar a página com uma tabela de comandos do Python">Comandos</a></li>
+                <li><a href="Utilização.html"
+                        title="Clique para acessar a página com as áreas de utilização do Python">Utilização</a></li>
+            </ul>
+        </div>
     </nav>
 
     <aside class="geral">
-    <div class="aside_container">
-        <div class="aside">
-        <p>Download Python</p>
-        <a target="_blank" href="https://www.python.org/downloads/"
-            title="Clique para acessar a página de dowload do Python"><img
-            src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-512.png"
-            alt="Imagem logo do Python"></a>
+        <div class="aside_container">
+            <div class="aside">
+                <p>Download Python</p>
+                <a target="_blank" href="https://www.python.org/downloads/"
+                    title="Clique para acessar a página de dowload do Python"><img
+                        src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-512.png"
+                        alt="Imagem logo do Python"></a>
+            </div>
+            <div class="aside">
+                <p>Acesse a Documentação</p>
+                <a target="_blank" href="https://docs.python.org/3/"
+                    title="Clique para acessar a página com a documentação do Python 3"><img
+                        src="https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/document-text-file-sheet-doc-256.png"
+                        alt="Miniatura desenhada de um documento"></a>
+            </div>
+            <div class="aside">
+                <p>Jornal do Python</p>
+                <a target="_blank" href="https://www.python.org/blogs/"
+                    title="Clique para acessar a página do jornal de notícias do Python"><img
+                        src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/news-256.png"
+                        alt="Desenho de um jornal"></a>
+            </div>
         </div>
-        <div class="aside">
-        <p>Acesse a Documentação</p>
-        <a target="_blank" href="https://docs.python.org/3/"
-            title="Clique para acessar a página com a documentação do Python 3"><img
-            src="https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/document-text-file-sheet-doc-256.png"
-            alt="Miniatura desenhada de um documento"></a>
-        </div>
-        <div class="aside">
-        <p>Jornal do Python</p>
-        <a target="_blank" href="https://www.python.org/blogs/"
-            title="Clique para acessar a página do jornal de notícias do Python"><img
-            src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/news-256.png" alt="Desenho de um jornal"></a>
-        </div>
-    </div>
     </aside>
+
     <div class="infos">
         <div>
             <p>Gustavo Contiero</p>
@@ -76,6 +82,7 @@
                     alt="Logo LinkedIn"></a>
         </div>
     </div>
+
     <main>
         <section>
             <header>
@@ -83,13 +90,15 @@
             </header>
             <form action="Formulário.html">
                 <label for="nome">Nome Completo</label>
-                <input name="nome" id="nome" class="texto" type="text" placeholder="Ex: Gustavo G. Contiero" minlength="3" required>
+                <input name="nome" id="nome" class="texto" type="text" placeholder="Ex: Gustavo G. Contiero"
+                    minlength="3" required>
                 <label for="email">Email</label>
-                <input name="email" id="email" class="texto" type="email" placeholder="Ex: PythonHelp@gmail.com" required>
+                <input name="email" id="email" class="texto" type="email" placeholder="Ex: PythonHelp@gmail.com"
+                    required>
                 <label for="dataNascimento">Data de Nascimento</label>
                 <input type="date" id="dataNascimento" name="dataNascimento" max="2023-06-26" required>
 
-                <label for="linguagem">Escolha suas linguagens preferidas</label>
+                <span>Escolha suas linguagens preferidas</span>
                 <div class="checkbox">
                     <label for="python">Python</label>
                     <input type="checkbox" id="python" name="linguagem" value="python" checked>
@@ -105,7 +114,7 @@
                     <input type="checkbox" id="javascript" name="linguagem" value="javascript">
                 </div>
 
-                <label for="dia_semana">Dia da semana preferido</label>
+                <label for="dia">Dia da semana preferido</label>
                 <select name="dia_semana" id="dia">
                     <option value="1">
                         Domingo
@@ -129,20 +138,23 @@
                         Sábado
                     </option>
                 </select>
-                <label for="sexo">Sexo</label>
+                <span>Sexo</span>
                 <div>
                     <input class="radio" type="radio" id="masculino" name="sexo" value="masculino">
                     <label for="masculino">Masculino</label>
                 </div>
                 <div>
-                    <input class="radio"  type="radio" id="feminino" name="sexo" value="feminino">
+                    <input class="radio" type="radio" id="feminino" name="sexo" value="feminino">
                     <label for="feminino">Feminino</label>
                 </div>
                 <div>
-                    <input class="radio"  type="radio" id="nao_responder" name="sexo" value="nao_responder" checked>
+                    <input class="radio" type="radio" id="nao_responder" name="sexo" value="nao_responder" checked>
                     <label for="nao_responder">Não quero responder</label>
                 </div>
-                <input id="submit" type="submit">
+                <div>
+                    <input id="submit" type="submit">
+                    <input id="reset" type="reset">
+                </div>
             </form>
         </section>
     </main>
@@ -151,4 +163,5 @@
         <h3 class="foot"> Site desenvolvido para a matéria de IWEB no IFSP - São Carlos </h3>
     </footer>
 </body>
+
 </html>

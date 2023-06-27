@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Python</title>
+  <title>Comandos</title>
   <link rel="stylesheet" href="css/style_index.css">
   <link rel="stylesheet" href="css/style_table.css">
 </head>
@@ -12,25 +12,28 @@
   <header>
     <h1 id="titulo">Python Help</h1>
     <div class="cabecario">
-        <div class="cabecario_top">
-            <p>Comandos</p>
-        </div>
-        <div class="cabecario_bottom">
-            <a href="Formulário.html" title="Clique para acessar a página de cadastro"><span>Cadastrar-se</span><img src="png_cadastrar.png" alt="sign up icon"></a>
-        </div>
+      <div class="cabecario_top">
+        <p>Comandos</p>
+      </div>
+      <div class="cabecario_bottom">
+        <a href="Formulário.html" title="Clique para acessar a página de cadastro"><span>Cadastrar-se</span><img
+            src="png_cadastrar.png" alt="sign up icon"></a>
+      </div>
     </div>
-</header>
+  </header>
 
   <nav>
-    <h1>Navegação</h1>
-    <ul>
-      <li><a href="Index.html" title="Clique para acessar o menu">Menu</a></li>
-      <li><a href="GuidoVanRossum.html" title="Clique para acessar a página do criador do Python">Criador</a></li>
-      <li><a href="História.html" title="Clique para acessar a página da história do Python">História</a></li>
-      <li>Comandos</li>
-      <li><a href="Utilização.html"
-          title="Clique para acessar a página com as áreas de utilização do Python">Utilização</a></li>
-    </ul>
+    <div class="nav_container">
+      <h2 class="nav_titulo">Navegação</h2>
+      <ul>
+        <li><a href="Index.html" title="Clique para acessar o menu">Menu</a></li>
+        <li><a href="Criador.html" title="Clique para acessar a página do criador do Python">Criador</a>
+        <li><a href="História.html" title="Clique para acessar a página da história do Python">História</a></li>
+        <li>Comandos</li>
+        <li><a href="Utilização.html"
+            title="Clique para acessar a página com as áreas de utilização do Python">Utilização</a></li>
+      </ul>
+    </div>
   </nav>
 
   <aside class="geral">
@@ -54,97 +57,102 @@
         <a target="_blank" href="https://www.python.org/blogs/"
           title="Clique para acessar a página do jornal de notícias do Python"><img
             src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/news-256.png" alt="Desenho de um jornal"></a>
-        </div>
+      </div>
     </div>
   </aside>
 
   <main>
     <section class="content">
-      <h2>Exemplo de comando em Python</h2>
-      <img src="python.png" alt="Foto de um código em Python" height="225" width="375"><br><br><br>
-      <table>
-        <caption>Comandos muito utilizados em python</caption>
-        <thead>
-          <tr>
-            <th>Marcador</th>
-            <th>Significado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Print</td>
-            <td>Imprime uma palavra ou frase (algo que foi escrito)</td>
-          </tr>
-          <tr>
-            <td>#</td>
-            <td>Torna um comentário apenas o que está na linha</td>
-          </tr>
-          <tr>
-            <td>input</td>
-            <td>Anexa na variável um valor digitado pelo usuário</td>
-          </tr>
-          <tr>
-            <td>if</td>
-            <td>Condicional com o significado "se", para a criação de estruturas condicionais</td>
-          </tr>
-          <tr>
-            <td>else</td>
-            <td>Condicional "se não"</td>
-          </tr>
-          <tr>
-            <td>elif</td>
-            <td>Condicional "se então"</td>
-          </tr>
-          <tr>
-            <td>import</td>
-            <td>Importa um arquivo do sistema</td>
-          </tr>
-          <tr>
-            <td>def</td>
-            <td>Define uma função</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="content">
-      <table border="1">
-        <caption>Tipos de Dados</caption>
-        <thead>
-          <tr>
-            <th colspan="2">Tipos de dados básicos</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Números</td>
-            <td>int, long, float, complex</td>
-          </tr>
-          <tr>
-            <td>Strings</td>
-            <td>str e unicode</td>
-          </tr>
-          <tr>
-            <td>Listas e Tuplas</td>
-            <td>list, tuple</td>
-          </tr>
-          <tr>
-            <td>Dicionários</td>
-            <td>dict</td>
-          </tr>
-          <tr>
-            <td>Arquivos</td>
-            <td>file</td>
-          </tr>
-          <tr>
-            <td>Booleanos</td>
-            <td>bool (true ou false)</td>
-          </tr>
-          <tr>
-            <td>Conjuntos</td>
-            <td>set, frozenset</td>
-          </tr>
-        </tbody>
-      </table>
+      <header>
+        <h2>Comandos Python</h2>
+      </header>
+      <article>
+        <header>
+          <h3>Exemplo de código em Python:</h3>
+        </header>
+        <img src="python.png" alt="Foto de um código em Python" height="225" width="375">
+        <table>
+          <caption>Comandos muito utilizados em Python</caption>
+          <thead>
+            <tr>
+              <th>Marcador</th>
+              <th>Significado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Print</td>
+              <td>Imprime uma palavra ou frase (algo que foi escrito)</td>
+            </tr>
+            <tr>
+              <td>#</td>
+              <td>Torna um comentário apenas o que está na linha</td>
+            </tr>
+            <tr>
+              <td>input</td>
+              <td>Anexa na variável um valor digitado pelo usuário</td>
+            </tr>
+            <tr>
+              <td>if</td>
+              <td>Condicional com o significado "se", para a criação de estruturas condicionais</td>
+            </tr>
+            <tr>
+              <td>else</td>
+              <td>Condicional "se não"</td>
+            </tr>
+            <tr>
+              <td>elif</td>
+              <td>Condicional "se então"</td>
+            </tr>
+            <tr>
+              <td>import</td>
+              <td>Importa um arquivo do sistema</td>
+            </tr>
+            <tr>
+              <td>def</td>
+              <td>Define uma função</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Tipos de Dados</caption>
+          <thead>
+            <tr>
+              <th colspan="2">Tipos de dados básicos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Números</td>
+              <td>int, long, float, complex</td>
+            </tr>
+            <tr>
+              <td>Strings</td>
+              <td>str e unicode</td>
+            </tr>
+            <tr>
+              <td>Listas e Tuplas</td>
+              <td>list, tuple</td>
+            </tr>
+            <tr>
+              <td>Dicionários</td>
+              <td>dict</td>
+            </tr>
+            <tr>
+              <td>Arquivos</td>
+              <td>file</td>
+            </tr>
+            <tr>
+              <td>Booleanos</td>
+              <td>bool (true ou false)</td>
+            </tr>
+            <tr>
+              <td>Conjuntos</td>
+              <td>set, frozenset</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
     </section>
   </main>
 
